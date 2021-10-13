@@ -141,6 +141,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #ffffff;
+		/* color: rgb(0, 0, 0); */
 		font-family: "Source Sans Pro", sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
@@ -1161,7 +1162,8 @@ input, select, textarea {
 
 
 			/* change this for main background */
-			/* background-image: url("../../images/bg.jpg"); */
+			/* background-image: url("../../images/jet-fuel.jpg"); */
+			background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("../../images/jet-fuel.jpg");
 
 
 			background-position: center;
@@ -1551,7 +1553,14 @@ input, select, textarea {
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: rgba(27, 31, 34, 0.85);
+
+			/* Change the background and foreground of individual page */
+			/* default value */
+			background-color: rgba(27, 31, 34, 0.85);   
+
+			/* background-color: rgba(255, 255, 255, 1);		 */
+			/* color: rgb(0, 0, 0); */
+	
 			border-radius: 4px;
 			opacity: 0;
 		}
