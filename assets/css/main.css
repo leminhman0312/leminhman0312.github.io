@@ -1338,6 +1338,7 @@ input, select, textarea {
 
 			#header .content p {
 				text-transform: none;
+				font-style: italic;
 				letter-spacing: 0.2rem;
 				font-size: 18px;
 				line-height: 2;
