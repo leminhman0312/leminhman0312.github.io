@@ -1164,7 +1164,7 @@ input, select, textarea {
 
 			/* change this for main background */
 			/* background-image: url("../../images/jet-fuel.jpg"); */
-			background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("../../images/jet-fuel.jpg");
+			background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../images/jet-fuel.jpg");
 
 
 			background-position: center;
