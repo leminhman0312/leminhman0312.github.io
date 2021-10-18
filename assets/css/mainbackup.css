@@ -25,6 +25,7 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -141,6 +142,8 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #ffffff;
+		/* color: #000000; */
+		/* color: rgb(0, 0, 0); */
 		font-family: "Source Sans Pro", sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
@@ -179,7 +182,7 @@ input, select, textarea {
 		font-weight: 600;
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
-		text-transform: uppercase;
+		text-transform: none;
 		letter-spacing: 0.2rem;
 	}
 
@@ -190,6 +193,7 @@ input, select, textarea {
 
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
 			border-bottom: solid 1px #ffffff;
+			color: #ffffff;
 			width: -moz-max-content;
 			width: -webkit-max-content;
 			width: -ms-max-content;
@@ -1157,9 +1161,13 @@ input, select, textarea {
 			-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
-			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/fluid.jpg");
+			transition: transform 0.325s ease-in-out, filvimter 0.325s ease-in-out;
+
+
+			/* change this for main background */
+			/* background-image: url("../../images/jet-fuel.jpg"); */
 			background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../images/fluid.jpg");
+
 
 			background-position: center;
 			background-size: cover;
@@ -1331,11 +1339,16 @@ input, select, textarea {
 				}
 
 			#header .content p {
-				text-transform: uppercase;
+				text-transform: none;
+				font-style: italic;
 				letter-spacing: 0.2rem;
-				font-size: 0.8rem;
+				font-size: 20px;
 				line-height: 2;
 			}
+
+			/* #header .content h1{
+				font-size: 70px;
+			} */
 
 		#header nav ul {
 			display: -moz-flex;
@@ -1366,7 +1379,7 @@ input, select, textarea {
 					padding: 0 1.25rem 0 1.45rem;
 					text-transform: uppercase;
 					letter-spacing: 0.2rem;
-					font-size: 0.8rem;
+					font-size: 1.0rem;
 					border-bottom: 0;
 				}
 
@@ -1531,24 +1544,40 @@ input, select, textarea {
 		-ms-flex-direction: column;
 		flex-direction: column;
 		position: relative;
-		max-width: 100%;
 		z-index: 3;
-	}
+		}
 
 		#main article {
-			-moz-transform: translateY(0.25rem);
+			 -moz-transform: translateY(0.25rem);
 			-webkit-transform: translateY(0.25rem);
 			-ms-transform: translateY(0.25rem);
-			transform: translateY(0.25rem);
+			transform: translateY(0.25rem); 
 			-moz-transition: opacity 0.325s ease-in-out, -moz-transform 0.325s ease-in-out;
 			-webkit-transition: opacity 0.325s ease-in-out, -webkit-transform 0.325s ease-in-out;
 			-ms-transition: opacity 0.325s ease-in-out, -ms-transform 0.325s ease-in-out;
 			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
+
+			/* Padding of individual pages: TOP, RIGHT, BOTTOM, LEFT */
 			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
 			position: relative;
+
+			/* Set the width of the individual pages */
 			width: 40rem;
+			/* width: 60rem; */
 			max-width: 100%;
-			background-color: rgba(27, 31, 34, 0.85);
+
+			/* font size individual pages */
+			font-size:larger;
+
+			background-color: rgba(27, 31, 34, 0.85);   
+			/* background-color: #ffffff; */
+
+			/* color: #000000; */
+			
+
+			/* background-color: rgba(255, 255, 255, 1);		 */
+			/* color: rgb(0, 0, 0); */
+	
 			border-radius: 4px;
 			opacity: 0;
 		}
@@ -1662,27 +1691,55 @@ input, select, textarea {
 			opacity: 0;
 		}
 
+/* Image change avatar shape size */
+	.image.avatar{
+		border-radius: 50%;
+		}
 
-		.mysection{
-			/* display: flex; */
-			flex-direction: row;
+		.image.avatar:before {
+			display: none;
 		}
-		
-		/* .paragraph { */
-			/* float: right; */
-			/* display: flex; */
-			/* flex-direction: column; */
-		/* } */ */
-		
-		.content {
-			padding: 30px;
+
+		.image.avatar img {
+			border-radius: 50%;
+			width: 300px;
+			height: 300px;
 		}
-		
-		.mysection img{
-			 border-radius: 50%;
-			 width: 200px;
-			 height:200px;
-			 float:left;
-			 margin-right: 30px;
+
+/* Image test
+		.image.test{
+			border-radius: 50%;
 		}
-		
+
+		.image.test img{
+			border-radius:50%;
+			height: auto;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+		} */
+
+
+
+.mysection{
+  /* display: flex; */
+  flex-direction: row;
+}
+
+/* .paragraph { */
+	/* float: right; */
+  /* display: flex; */
+  /* flex-direction: column; */
+/* } */ */
+
+.content {
+  padding: 30px;
+}
+
+.mysection img{
+	 border-radius: 50%;
+	 width: 400px;
+	 height:400px;
+	 float:left;
+	 margin-right: 30px;
+}
