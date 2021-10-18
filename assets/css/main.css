@@ -142,6 +142,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #ffffff;
+		/* color: #000000; */
 		/* color: rgb(0, 0, 0); */
 		font-family: "Source Sans Pro", sans-serif;
 		font-weight: 300;
@@ -192,6 +193,7 @@ input, select, textarea {
 
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
 			border-bottom: solid 1px #ffffff;
+			color: #ffffff;
 			width: -moz-max-content;
 			width: -webkit-max-content;
 			width: -ms-max-content;
@@ -207,7 +209,7 @@ input, select, textarea {
 	}
 
 	h2 {
-		font-size: 1.5rem;
+		font-size: 2.0rem;
 		line-height: 1.4;
 		letter-spacing: 0.5rem;
 	}
@@ -217,7 +219,7 @@ input, select, textarea {
 	}
 
 	h4 {
-		font-size: 0.8rem;
+		font-size: 1.3rem;
 	}
 
 	h5 {
@@ -1164,7 +1166,7 @@ input, select, textarea {
 
 			/* change this for main background */
 			/* background-image: url("../../images/jet-fuel.jpg"); */
-			background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../images/jet-fuel.jpg");
+			background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../images/fluid.jpg");
 
 
 			background-position: center;
@@ -1340,8 +1342,12 @@ input, select, textarea {
 				text-transform: none;
 				font-style: italic;
 				letter-spacing: 0.2rem;
-				font-size: 18px;
+				font-size: 20px;
 				line-height: 2;
+			}
+
+			#header .content h1{
+				font-size: 70px;
 			}
 
 		#header nav ul {
@@ -1373,7 +1379,7 @@ input, select, textarea {
 					padding: 0 1.25rem 0 1.45rem;
 					text-transform: uppercase;
 					letter-spacing: 0.2rem;
-					font-size: 0.8rem;
+					font-size: 1.0rem;
 					border-bottom: 0;
 				}
 
@@ -1538,27 +1544,36 @@ input, select, textarea {
 		-ms-flex-direction: column;
 		flex-direction: column;
 		position: relative;
-		max-width: 100%;
 		z-index: 3;
-	}
+		}
 
 		#main article {
-			-moz-transform: translateY(0.25rem);
+			 -moz-transform: translateY(0.25rem);
 			-webkit-transform: translateY(0.25rem);
 			-ms-transform: translateY(0.25rem);
-			transform: translateY(0.25rem);
+			transform: translateY(0.25rem); 
 			-moz-transition: opacity 0.325s ease-in-out, -moz-transform 0.325s ease-in-out;
 			-webkit-transition: opacity 0.325s ease-in-out, -webkit-transform 0.325s ease-in-out;
 			-ms-transition: opacity 0.325s ease-in-out, -ms-transform 0.325s ease-in-out;
 			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
+
+			/* Padding of individual pages: TOP, RIGHT, BOTTOM, LEFT */
 			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
 			position: relative;
-			width: 40rem;
+
+			/* Set the width of the individual pages */
+			/* width: 40rem; */
+			width: 60rem;
 			max-width: 100%;
 
-			/* Change the background and foreground of individual page */
-			/* default value */
+			/* font size individual pages */
+			font-size:larger;
+
 			background-color: rgba(27, 31, 34, 0.85);   
+			/* background-color: #ffffff; */
+
+			/* color: #000000; */
+			
 
 			/* background-color: rgba(255, 255, 255, 1);		 */
 			/* color: rgb(0, 0, 0); */
@@ -1690,3 +1705,41 @@ input, select, textarea {
 			width: 300px;
 			height: 300px;
 		}
+
+/* Image test
+		.image.test{
+			border-radius: 50%;
+		}
+
+		.image.test img{
+			border-radius:50%;
+			height: auto;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+		} */
+
+
+
+.mysection{
+  /* display: flex; */
+  flex-direction: row;
+}
+
+/* .paragraph { */
+	/* float: right; */
+  /* display: flex; */
+  /* flex-direction: column; */
+/* } */ */
+
+.content {
+  padding: 30px;
+}
+
+.mysection img{
+	 border-radius: 50%;
+	 width: 400px;
+	 height:400px;
+	 float:left;
+	 margin-right: 30px;
+}
